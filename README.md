@@ -31,10 +31,12 @@ Central de inteligência comercial para transformar informações de parceiros, 
 3. Copie `.env.example` para `.env.local`.
 4. Configure `DATABASE_URL` com uma conexão PostgreSQL.
 5. Configure `OPENAI_API_KEY` para habilitar o copiloto.
-6. Execute `npm run db:migrate` para criar as tabelas.
+6. Execute `npm run db:migrate` para criar a primeira migração no ambiente de desenvolvimento.
 7. Execute `npm run db:seed` para inserir a base inicial.
 8. Execute `npm run dev`.
 9. Abra `http://localhost:3000`.
+
+Em produção, depois que as migrações estiverem versionadas, use `npm run db:deploy`.
 
 ## Rotas principais
 
